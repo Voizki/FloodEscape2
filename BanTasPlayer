@@ -4,7 +4,7 @@ local LocalPlayer = game.Players.LocalPlayer
 local PlayerId = 247535
 local Alert = getsenv(game.Players.LocalPlayer.PlayerScripts.CL_MAIN_GameScript).newAlert
 local TasToPlay
-function CreateCharacter(ID,Vip,Premium)
+local function CreateCharacter(ID,Vip,Premium)
     local PlayerInfo = game.UserService:GetUserInfosByUserIdsAsync({ID})
     local FakeModel = game.Players:GetCharacterAppearanceAsync(ID)
     local PlayerHolder = Instance.new("ImageLabel")
