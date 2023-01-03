@@ -82,6 +82,8 @@ local function SetUpMap()
     LocalPlayer.Character:WaitForChild("Humanoid")
     LocalPlayer.Character:WaitForChild("HumanoidRootPart")
     ReplicatedStorage.Remote.RemoveWaiting:FireServer(Key)
+    LocalPlayer.Character.Humanoid.WalkSpeed = 0
+    LocalPlayer.Character.Humanoid.JumpPower = 0
     task.wait(0.5)
     LocalPlayer.Character.Humanoid.WalkSpeed = 0
     LocalPlayer.Character.Humanoid.JumpPower = 0
